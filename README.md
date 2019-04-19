@@ -1,2 +1,2 @@
 # StageLI
-Les codes et les documents crées pendant le stage LI de Beyza TASDELEN 
+This repertory gives access to codes and documentations created for LI Internship de Beyza Tasdelen supervised by Juliette Millet.
