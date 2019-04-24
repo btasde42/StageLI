@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import csv
-from Arpa_IPA_liste import Arpa_IPA2
+
 
 def extract_pairs(csvfile,returnfile):
 	"""
