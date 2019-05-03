@@ -36,11 +36,11 @@ def couple_speaker(file,returnfile):
 	Returns:
 		a csv file
 	"""
-	
+	sliced_file=slice_csv(file)
 	Dict_contx_speaker={}
 
 	with open(file, 'r') as file:
-		reader=csv.DictReader(file,delimiter='\t')
+		reader=csv.DictReader(sliced_file,delimiter='\t')
 		for row in reader:
 			#create a dictionnary which have Contrastes column as key
 			#and a list of speaker couples extracted from Speaker column as values
