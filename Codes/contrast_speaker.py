@@ -47,12 +47,17 @@ def couple_speaker(file,returnfile):
 			Dict_contx_speaker.setdefault(row['Contrastes'],[]).append(row['Speakers'])
 
 	list_cont=[]
+	list_sp_unique=[]
 	list_quantite=[]
 	#we extract contrasts and their total number of speaker as two lists
 	for k,v in Dict_contx_speaker.items():
 		list_cont.append(k)
-		list_quantite.append(len(v))
-
+		for i in v:
+			#condition for not repetitive context list
+			if i not in list_sp_unique:
+				list_sp_unique.append(i)
+		list_quantite.append(len(list_sp_unique))
+		list_sp_unique=[]
 
 	with open(returnfile,'w',newline='',encoding='utf-8') as f:
 		#we rewrite those lists as two column in a new csv file
