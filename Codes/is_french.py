@@ -3,6 +3,14 @@
 import pandas as pd
 
 def is_french(file,returnfile):
+	"""
+	This functions checks if all the symbols in a given file are french symbols and returns non-french symbols.
+	Args:
+		file: a csv file of symbols
+		returnfile: the file which contains the non-french files
+	Returns:
+		 a csv file
+	"""
 	list_french_phones=['i','e','ɛ','a','y','ø','œ','u','o','ɔ','ɑ','ə','ɛ̃','ɔ̃','œ̃','õ','ɑ̃','ɥ','w','j','ʃ','ʒ','m','n','ɲ','ŋ','p','b','t','d','k','g','f','v','l','s','z','ʁ']
 	frame=pd.read_csv(file)
 	phone_list_file=(frame['Phones'].tolist())
