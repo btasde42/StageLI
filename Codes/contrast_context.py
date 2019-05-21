@@ -6,6 +6,8 @@ import pandas as pd
 
 def contrast_context(file,returnfile):
 	"""
+	This function takes a csvfile which contains only two specific column to be compared and counted
+	Use slice_csv funtion to extract those parts!
 	"""
 
 	Dict_contrast_context={}
