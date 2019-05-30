@@ -16,10 +16,15 @@ Phone pair files contains contrast couples for both language before the cleaning
 
 #Cleaned data:
 
-#Across and Item files
+#Across and Item files:
 Main files used for each operations are 'english_1s_across_cleaned' and 'french_1s_across_cleaned' files. These files are cleaned from problematic phones and speakers with 'eliminate' function in Codes file. A second cleaning is done for certain phonemic groups as glides, nasals and approximants as 'l' and 'r' in both languages. The results of this cleaning are saved in '...-second' files for both .item and across files.
----
+
+#Speaker Cleaned Data and Bizarre Phones Cleaned Data:
 
 In english datas there were only speaker section to be cleaned because there was no problematic phones. So after the cleaning we have two files 'contrast_speaker_eng_cleaned' whic contains contrast pairs and their speaker pairs. And then there is 'contrast_speaker_quantity_eng_cleaned' whic contains number of speaker for each contast couple.
 
 But in french we did first, a phonemic cleaning then a speaker cleaning. So we have two results for each cleaning. These results are collected in 'contrast_'context_fr_cleaned-first' and 'contrast_speaker_quantity_fr-first' after the cleanong of problematic phones. Then we did a second cleaning with speakers and the results are saved in 'context_fr_cleaned-fsecond' and 'contrast_speaker_quantity_fr-second' files.
+
+#Context phones cleaned Data:
+In this file we have recleaned files by their context phones. contrats-context..-contx.csv contains the results of a second cleaning for certain phonemic groups as glides, nasals and approximants as 'l' and 'r' in both languages. Min_3_contrasts....csv files contains the contrast pairs which have at least 3 common context with their simetric pair.
+
