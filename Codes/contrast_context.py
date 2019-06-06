@@ -30,7 +30,26 @@ def contrast_context(file,returnfile):
 				list_ctx_unique.append(i)
 		list_quantite.append(len(list_ctx_unique))
 		list_ctx_unique=[]
+	return Dict_contrast_unique_context
 
+	def same_context(file,returnfile):
+		"""
+		This function extracts contrast pairs with at least 3 contexts in common with their symétric contrast
+		"""
+		same_context={}
+		dict_cont=contrast_context(file)
+		same_cont=[]
+		for k,v in dict_cont.items():
+			for k2,v2 in dict_cont.items():
+				if k[::-1]==k2:
+					for i in v:
+						for j in v2:
+							if i==j:
+								same_cont.append(i)
+					if len(same_cont)>=3 and k[::-1] not in same_context: #not repetitive key consition
+						same_context.setdefault(k,same_cont)
+					same_cont=[]
+		
 
 	with open(returnfile,'w',newline='',encoding='utf-8') as f:
 		#we rewrite those lists as two column in a new csv file
