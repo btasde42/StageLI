@@ -1,3 +1,4 @@
+#file onset offset #phone prev-phone next-phone speaker
 8329 0.5025 0.7225 e m d M10_N
 8329 0.5825 0.8625 d e a M10_N
 10006 0.2625 0.7425 a d m M10_N
