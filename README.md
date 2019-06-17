@@ -32,9 +32,9 @@ And this file gives access to another file "Maximum Common Context":
 
 Min_3_contrast_context files for both englsh and french contains contrast pairs whith at leash 3 context pair which has an mirror option. All the context possiblities with reverse duplicate are presented as lists.
 
-All_most_common_context files for both english and french repsents contexts which are most common between all contrast pairs. For each contrast pairs there are at least 3 contexts respresented in the list.
+All_most_common_context files for both english and french repsents contexts which are most common between all contrast pairs. For each contrast pairs there are at least 3 contexts respresented in 4 list of possibilities.
 
 And this file gives access to another file which name is "Final max 4 solution contexts":
 
-In this file we have 4_context_for_each files for english and french. This documents contains 3 or 4 context for each contrast pairs. These are the final contexts to be used int the experiment part.
+In this file we have 3_context_each files for english and french. This documents contains 3 context for each contrast pairs. There are four file for four possibilities. These are the final contexts to be used int the experiment part.
 
