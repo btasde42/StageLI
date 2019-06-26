@@ -44,6 +44,7 @@ All_most_common_context files for both english and french repsents contexts whic
 And this file gives access to another file which name is "Final max 4 solution contexts":
 
 In this file we have 3_context_each files for english and french. This documents contains 3 context for each contrast pairs. There are four file for four possibilities. These are the final contexts to be used int the experiment part.
+
 -----------------------------------------------------------------------------------------------
 
 #Codes:
